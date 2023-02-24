@@ -59,7 +59,7 @@ const addPlayer = async (req,res,next) =>{
 const updatePlayer = async (req,res,next) =>{
     const id = req.params.id;
     const {first_name, last_name, position, year_salary, years_in_the_league} = req.body;
-    let person;
+    let player;
     try{
         player = await Player.findByIdAndUpdate(id,{
             first_name,
