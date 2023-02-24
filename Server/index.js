@@ -10,6 +10,11 @@ const cors = require("cors");
 
 app.use(cors());
 
+const router = require("./Routes/Roster-Routes");
+
+app.use("/roster", router)
+
+
 
 
 mongoose.connect("mongodb+srv://bamaboi912:Student1234!@cluster0.lpofvla.mongodb.net/LA_Rams?retryWrites=true&w=majority").then(() => 
