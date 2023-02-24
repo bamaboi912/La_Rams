@@ -8,7 +8,7 @@ const rosterControllers = require("../Controllers/Roster-Controllers");
 
 
 
-//localhost:3002/roster/get
+//localhost:3002/player/get
 router.get("/get", rosterControllers.getAllPlayers);
 
 //localhost:3002/roster/update
