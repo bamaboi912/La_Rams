@@ -16,7 +16,7 @@ const rosterSchema = new Schema({
         require: true,
     },
     year_salary:{
-        type: Number,
+        type: String,
         require: true,
     },
     years_in_the_league:{
